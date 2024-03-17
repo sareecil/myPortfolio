@@ -5,6 +5,11 @@ import me from './assets/img/me.png';
 import work1 from './assets/img/photosnap.png';
 import work2 from './assets/img/news.png';
 import work3 from './assets/img/single-page.png';
+import mail from './assets/img/email.svg'
+import lin from './assets/img/linkedin-in.svg'
+import git from './assets/img/github.svg'
+import inst from './assets/img/instagram-logo.svg'
+
 
 function App() {
   return (
@@ -12,12 +17,13 @@ function App() {
       <div className="header">
         <div className="navbar">
           <div className="title">
-            <Link to="home" smooth={true} duration={1000}><h1>Sare Cil</h1></Link>
+            <Link to="home" smooth={true} duration={1000}><h1>SARE CIL</h1></Link>
           </div>
           <div className="links">
             <Link to="home" smooth={true} duration={1000}>Anasayfa</Link>
             <Link to="about" smooth={true} duration={1000}>Hakkımda</Link>
             <Link to="work" smooth={true} duration={1000}>Projeler</Link>
+            <Link to="contact" smooth={true} duration={1000}>İletişim</Link>
           </div>
         </div>
       </div>
@@ -35,7 +41,7 @@ function App() {
         </section>
         <section id="about">
           <div className="about">
-            <h1>Hakkımda</h1>
+            <h1>hakkımda.</h1>
             <p>Atatürk Üniversitesi Bilgisayar Programcılığı bölümü öğrencisiyim. 2021 yılında Siliconmade Academy’de FullStack programlama eğitimi aldım. Sonrasında Acunmedya Akademi de Frontend alanında kendimi geliştirdim. Bu alana daha yatkın olduğumu farkedince kendimi geliştirmeye odaklandım.</p>
             <p>Şimdi yazılım dünyasına daha gerçek projelerle devam etmek istiyorum. Kendimi her gün daha fazla geliştireceğim bir alanda, gerçek projelerle elimden gelenin en iyisini yapmak için sabırsızlanıyorum</p>
           </div>   
@@ -63,7 +69,7 @@ function App() {
         </section>
         <section id="work">
           <div className="work">
-            <h1>Projeler</h1>
+            <h1>projeler.</h1>
             <p>Eğitimlerim boyunca yaptığım projelerin kodlarını <a href="https://github.com/sareecil" target='_blank' rel='noreferrer'>Github</a> adresim üzerinden inceleyebilirsiniz. Ayrıca yayına aldığım projeleri aşağıda paylaşıyorum.</p>
             <div className="img">
               <div className="img-part">
@@ -78,6 +84,27 @@ function App() {
                 <h3><a href="https://sarecil-single-page.netlify.app/" target='_blank' rel='noreferrer'>Single Page Figma Tasarım</a></h3>
                 <img src={work3} alt="" />
               </div>
+            </div>
+          </div>
+        </section>
+        <section id='contact'>
+          <div className="contact">
+            <h1>iletişim.</h1>
+            <div className="mail-box box">
+              <img src={mail} alt="" />
+              <a href='mailto:sarecills@gmail.com'>sarecills@gmail.com</a>
+            </div>
+            <div className="box">
+              <img src={lin} alt="" />
+              <a href='https://www.linkedin.com/in/sareecil/' target='blank'>https://www.linkedin.com/in/sareecil/</a>
+            </div>
+            <div className="box">
+              <img src={git} alt="" />
+              <a href='https://github.com/sareecil' target='blank'>https://github.com/sareecil</a>
+            </div>
+            <div className="box">
+              <img src={inst} alt="" />
+              <a href='https://www.instagram.com/sarecil/' target='blank'>https://www.instagram.com/sarecil/</a>
             </div>
           </div>
         </section>

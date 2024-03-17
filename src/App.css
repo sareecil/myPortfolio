@@ -33,15 +33,20 @@ body {
   text-decoration: underline;
 }
 
+
 .navbar {
   margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 150px;
+  gap: 800px;
+  position: fixed;
+  z-index: 1000;
 }
 
+
 .links {
-  margin-top: 10px;
   display: flex;
   gap: 70px;
   font-size: 17px;
@@ -54,6 +59,7 @@ body {
   display: flex;
   gap: 200px;
   padding-bottom: 70px;
+  padding-top: 230px;
 }
 
 .hero h1 {
@@ -145,3 +151,27 @@ body {
   width: 500px;
 }
 
+.contact {
+  margin-bottom: 60px;
+}
+
+.contact h1 {
+  font-size:90px;
+  color: rgba(35, 46, 99, 0.993);
+  margin-bottom: 20px;
+  margin-top: 240px;
+}
+
+.contact img {
+  width: 30px;
+}
+
+.box {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 10px;
+}
+
+.box a {
+  margin-top: 2px;
+}
