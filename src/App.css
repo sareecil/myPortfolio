@@ -21,6 +21,7 @@ body {
 .container {
   margin: 0 auto;
   width: 1440px;
+  display: grid;
 }
 
 .title a {
@@ -43,6 +44,7 @@ body {
   gap: 800px;
   position: fixed;
   z-index: 1000;
+  grid-area: navbar;
 }
 
 
@@ -60,6 +62,7 @@ body {
   gap: 200px;
   padding-bottom: 70px;
   padding-top: 230px;
+  grid-area: hero;
 }
 
 .hero h1 {
@@ -70,6 +73,11 @@ body {
 .left {
   margin-top: 90px;
   margin-left: 50px;
+  grid-area: left-a;
+}
+
+.right {
+  grid-area: right-a;
 }
 
 .right img{
@@ -80,6 +88,7 @@ body {
 .about {
   margin-top: 220px;
   width: 660px;
+  grid-area: about;
 }
 
 .about h1 {
@@ -95,6 +104,7 @@ body {
 .me-part {
   margin-left: 430px;
   margin-top: 140px;
+  grid-area: me-part;
 }
 
 .part-one {
@@ -115,6 +125,7 @@ body {
 
 .work {
   padding-top: 80px;
+  grid-area: work;
 }
 
 .work h1 {
@@ -153,6 +164,7 @@ body {
 
 .contact {
   margin-bottom: 60px;
+  grid-area: contact;
 }
 
 .contact h1 {
@@ -174,4 +186,61 @@ body {
 
 .box a {
   margin-top: 2px;
+}
+
+@media (max-width: 769px) {
+
+  .left {
+    display: grid;
+  }
+
+  .right {
+    display: grid;
+  }
+  
+  .container {
+    grid-template-columns:1fr ;
+    grid-template-areas: "navbar navbar"
+    "left-a"
+    "right-a";
+  } 
+
+  .hero {
+    display: block;
+  }
+  
+  .right img {
+    padding-left: 150px;;
+  }
+
+  .title h1 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .navbar {
+    gap: 140px;
+  }
+  .links {
+    gap: 15px;
+  }
+
+  .about {
+    padding-left: 80px;
+  }
+
+  .me-part {
+    margin-left: 50px;
+    width: 650px;
+  }
+  .work {
+    padding-left: 80px;
+  }
+  .img {
+    display: block;
+  }
+
+  .contact {
+    padding-left: 80px;
+  }
 }
