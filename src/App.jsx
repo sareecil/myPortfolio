@@ -70,7 +70,7 @@ function App() {
         <section id="work">
           <div className="work">
             <h1>projeler.</h1>
-            <p>Eğitimlerim boyunca yaptığım projelerin kodlarını <a href="https://github.com/sareecil" target='_blank' rel='noreferrer'>Github</a> adresim üzerinden inceleyebilirsiniz. Ayrıca yayına aldığım projeleri aşağıda paylaşıyorum.</p>
+            <p>Eğitimlerim boyunca yaptığım projelerin kodlarını <a href="https://github.com/sareecil" target='_blank' rel='noreferrer'>Github</a> adresim üzerinden inceleyebilirsiniz. Ayrıca yayına aldığım projeleri aşağıda paylaşıyorum. Henüz responsive değil üzerinde çalışıyorum.</p>
             <div className="img">
               <div className="img-part">
                 <h3><a href="https://sareecil-photosnap.netlify.app/" target='_blank' rel='noreferrer'>Photosnap Figma Tasarım</a></h3>
