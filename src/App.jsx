@@ -9,7 +9,7 @@ import mail from './assets/img/email.svg'
 import lin from './assets/img/linkedin-in.svg'
 import git from './assets/img/github.svg'
 import inst from './assets/img/instagram-logo.svg'
-
+import social from './assets/img/socialmedia.png'
 
 function App() {
   return (
@@ -83,6 +83,10 @@ function App() {
               <div className="img-part">
                 <h3><a href="https://sarecil-single-page.netlify.app/" target='_blank' rel='noreferrer'>Single Page Figma Tasarım</a></h3>
                 <img src={work3} alt="" />
+              </div>
+              <div className="img-part">
+                <h3><a href="https://sarecil-socialmedia.netlify.app/" target='_blank' rel='noreferrer'>Socail Media</a></h3>
+                <img src={social} alt="" />
               </div>
             </div>
           </div>

@@ -145,7 +145,8 @@ body {
 
 .img {
   margin-top: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
