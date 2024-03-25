@@ -83,6 +83,7 @@ body {
 .right img{
   width: 540px;
   border-radius: 100%;
+
 }
 
 .about {
@@ -95,6 +96,7 @@ body {
   font-size:90px;
   color: rgba(35, 46, 99, 0.993);
   margin-bottom: 20px;
+  padding-top: 85px;
 }
 
 .about p {
